@@ -1,0 +1,13 @@
+# Subscribers
+fast_sam_depth_goal_subscriber_topic: 'robohop_ros/combined_message'
+
+# Publishers
+image_publisher_topic: 'robohop_ros/image'
+segmentation_image_publisher_topic: 'robohop_ros/segmentation'
+traversable_segmentation_image_publisher_topic: 'robohop_ros/traversable_segmentation'
+monocular_depth_image_publisher_topic: 'robohop_ros/depth_image'
+goal_image_publisher_topic: 'robohop_ros/goal'
+localised_image_publisher_topic: 'robohop_ros/localised_image'
+path_length_scaler: 10
+
+display_segmentation_with_colours: True

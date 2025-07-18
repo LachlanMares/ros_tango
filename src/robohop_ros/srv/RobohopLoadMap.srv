@@ -1,0 +1,5 @@
+string maps_id
+string graph_id
+uint32[] goal_node_indices
+---
+uint8 done

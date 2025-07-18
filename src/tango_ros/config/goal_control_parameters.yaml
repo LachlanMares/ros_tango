@@ -1,0 +1,29 @@
+# Subscribers
+fast_sam_depth_goal_subscriber_topic:  'robohop_ros/combined_message'
+
+# Publishers
+twist_control_publisher_topic: "odometry_command"
+cost_map_image_publisher_topic: 'tango_ros/goal_control/cost_map'
+traversability_image_publisher_topic: 'tango_ros/goal_control/traversability'
+goal_image_publisher_topic: 'tango_ros/goal_control/goal'
+
+# Services
+service_name_robohop_fast_sam_strings: 'robohop_ros/robohop_fast_sam_strings_service'
+
+# Camera Settings
+intrinsics:
+  focal_u:  404.98 #232 #234.96454594  # 232
+  focal_v:  626.21 #200 # 235.1931311  # 200
+  center_u: 213.31 #235.33568193
+  center_v: 263.25 # 205.16684815626
+
+# controller settings
+pid_values: [ .35, 0, 0]
+default_velocity_control: 0.12
+traversable_classes: []
+grid_size: 0.125
+
+rgb_led_topic: 'face_rgb_led'
+watchdog_duration: 1.0
+
+

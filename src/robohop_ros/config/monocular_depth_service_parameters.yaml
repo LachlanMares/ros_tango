@@ -1,0 +1,10 @@
+depth_service_name: 'depth_anything/depth_service'
+
+model_type: 'depth_anything'
+
+depth_anything_settings:
+  encoder: 'vits'
+  image_height: 400
+  image_width: 464
+  infer_height: 392
+  cuda_device: 1

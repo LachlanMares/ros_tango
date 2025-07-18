@@ -1,0 +1,10 @@
+sensor_msgs/CompressedImage image
+uint32[] traversable_point
+---
+sensor_msgs/Image segmentation
+sensor_msgs/Image traversable_segmentation
+int32[] mask_sums
+int32[] coordinates
+uint32[] segmentation_shape
+uint32[] non_zeros_indices_shape
+uint32[] non_zeros_indices

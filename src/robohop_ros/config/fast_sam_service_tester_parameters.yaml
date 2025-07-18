@@ -1,0 +1,19 @@
+compressed_image_message_subscriber_topic: '/camera/front/compressed_image'
+image_message_subscriber_topic: '/camera/front/image'
+
+segmentation_image_publisher_topic: 'fast_sam/segmentation'
+segmentation_points_image_publisher_topic: 'fast_sam/points_segmentation'
+segmentation_boxes_image_publisher_topic: 'fast_sam/boxes_segmentation'
+segmentation_traversable_publisher_topic: 'fast_sam/traversable_segmentation'
+
+service_name_segmentation: 'fast_sam/segmentation_service'
+service_name_segmentation_points: 'fast_sam/segmentation_points_service'
+service_name_segmentation_boxes: 'fast_sam/segmentation_boxes_service'
+service_name_segmentation_robohop: 'fast_sam/robohop_points'
+service_name_segmentation_robohop_clip: 'fast_sam/robohop_clip'
+
+display_segmentation_with_colours: True
+
+points: [[232, 350]]  # [[u, v], [u, v]]
+boxes: [[100, 100, 200, 200], [250, 250, 300, 300]]
+

@@ -1,0 +1,3 @@
+<launch>
+    <node name="monocular_depth_service" pkg="robohop_ros" type="monocular_depth_service.py" output="screen"/>
+</launch>

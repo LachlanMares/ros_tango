@@ -1,0 +1,16 @@
+<launch>
+    <arg name="use_robohop_visuals" default="true" />
+    <arg name="robohop_with_model_services" value="false" />
+
+    <group if="$(arg robohop_with_model_services)">
+        <include file="$(find robohop_ros)/launch/robohop_services.launch"/>
+    </group>
+
+    <group if="$(arg use_robohop_visuals)">
+        <include file="$(find robohop_ros)/launch/robohop_visuals.launch"/>
+    </group>
+
+    <node pkg="robohop_ros" type="robohop.py" name="robohop_node" output="screen">
+        <param name="use_model_service" value="$(arg robohop_with_model_services)"/>
+    </node>
+</launch>

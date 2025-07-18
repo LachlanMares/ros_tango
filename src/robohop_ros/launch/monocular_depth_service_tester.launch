@@ -1,0 +1,6 @@
+<launch>
+    <!-- <node name="monocular_depth_service" pkg="depth_anything" type="monocular_depth_service.py" output="screen"/> -->
+    <node name="monocular_metric_depth_service" pkg="robohop_ros" type="monocular_metric_depth_service.py" output="screen"/>
+    <node name="monocular_depth_service_tester" pkg="robohop_ros" type="monocular_depth_service_tester.py" output="screen"/>
+    <node pkg="rviz" type="rviz" name="main_rviz_window" args=" -d $(find robohop_ros)/rviz/monocular_depth_service_tester.rviz"/>
+</launch>

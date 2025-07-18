@@ -1,0 +1,53 @@
+# Subscribers
+image_message_subscriber_topic: '/camera/front/decompressed_image'
+compressed_image_message_subscriber_topic: '/camera/front/compressed_image'
+
+# Publishers
+fast_sam_depth_goal_publisher_topic: 'robohop_ros/combined_message'
+
+# Depth Services
+metric_depth_service_name: 'depth_anything/metric_depth_service'
+metric_pointcloud_service_name: 'depth_anything/metric_pointcloud_service'
+metric_depth_with_pointcloud_service_name: 'depth_anything/metric_depth_and_pointcloud_service'
+
+# Fast SAM Services
+service_name_segmentation_robohop: 'fast_sam/robohop_points'
+service_name_segmentation_robohop_clip: 'fast_sam/robohop_clip'
+fast_sam_infer_with_points: True  # False is CLIP, True is point on floor
+fast_sam_strings: [ "ground", "floor" ]
+
+resize_width: 464
+resize_height: 400
+
+# Robohop Services
+use_robohop_load_map_service: True
+service_name_robohop_load_map: 'robohop_ros/robohop_load_map_service'
+service_name_robohop_fast_sam_strings: 'robohop_ros/robohop_fast_sam_strings_service'
+
+# Filter to help stabilise localiser
+mode_filter_length: 5
+
+load_map: "basic"
+
+basic:
+  maps_id: "LabBasicRun"
+  graph_id: "nodes_fast_sam_filterText_floor_ceiling_graphObject_4_lightglue.pickle"
+  goal_node_indices: [ 1907, 1938, 1970, 2003, 2038, 2039, 2061, 2093 ]
+
+localizer_cuda_device: 0
+
+fast_sam_model:
+  cuda_device: 0
+  conf: 0.25
+  model: "FastSAM-s.pt"
+  imgsz: 480
+  height: 400
+  width: 464
+  mask_height: 416
+  mask_width: 480
+
+depth_model:
+  model: "depth_anything"
+  model_name: 'zoedepth'
+  pretrained_resource: 'depth_anything/metric_depth/checkpoints/depth_anything_metric_depth_indoor.pt'
+  cuda_device: 1

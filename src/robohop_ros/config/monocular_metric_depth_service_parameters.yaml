@@ -1,0 +1,10 @@
+metric_depth_service_name: 'depth_anything/metric_depth_service'
+metric_pointcloud_service_name: 'depth_anything/metric_pointcloud_service'
+metric_depth_with_pointcloud_service_name: 'depth_anything/metric_depth_and_pointcloud_service'
+
+model_type: 'depth_anything'
+
+depth_anything_metric_settings:
+  model_name: 'zoedepth'
+  pretrained_resource: 'depth_anything/metric_depth/checkpoints/depth_anything_metric_depth_indoor.pt'
+  cuda_device: 1

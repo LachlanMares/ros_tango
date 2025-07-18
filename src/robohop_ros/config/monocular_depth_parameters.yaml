@@ -1,0 +1,18 @@
+compressed_image_message_subscriber_topic: '/camera/front/compressed_image'
+image_message_subscriber_topic: '/camera/front/decompressed_image'
+
+monocular_depth_compressed_publisher_topic: 'monocular_depth/compressed_image'
+monocular_depth_publisher_topic: 'monocular_depth/image'
+
+publish_compressed: False
+timestamp_threshold: 0.5
+model_type: 'depth_anything'
+
+normalise_image: True
+
+depth_anything_settings:
+  encoder: 'vits'
+  image_height: 400
+  image_width: 464
+  infer_height: 392
+  cuda_device: 1

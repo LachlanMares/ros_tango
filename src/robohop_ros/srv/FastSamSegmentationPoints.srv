@@ -1,0 +1,7 @@
+sensor_msgs/CompressedImage image
+uint32[] points
+uint8 add_points_result_to_segmentation
+---
+sensor_msgs/Image segmentation
+uint32[] point_segmentation_shape
+uint8[] point_segmentation

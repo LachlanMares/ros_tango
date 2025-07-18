@@ -1,0 +1,18 @@
+compressed_image_message_subscriber_topic: '/camera/front/compressed_image'
+image_message_subscriber_topic: '/camera/front/decompressed_image'
+
+monocular_depth_image_publisher_topic: 'monocular_metric_depth/image'
+monocular_depth_compressed_publisher_topic: 'monocular_metric_depth/compressed_image'
+monocular_depth_pointcloud_topic: 'monocular_metric_depth/pointcloud'
+monocular_depth_pointcloud_frame_id: "camera_front"
+
+publish_compressed: False
+timestamp_threshold: 0.5
+model_type: 'depth_anything'
+
+camera_parameters: [234.96454594, 235.1931311, 235.33568193, 205.16684815]  # [Fx, Fy, Cx, Cy]
+
+depth_anything_metric_settings:
+  model_name: 'zoedepth'
+  pretrained_resource: 'depth_anything/metric_depth/checkpoints/depth_anything_metric_depth_indoor.pt'
+  cuda_device: 1

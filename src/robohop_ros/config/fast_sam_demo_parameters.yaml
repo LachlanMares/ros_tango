@@ -1,0 +1,7 @@
+conf: 0.25
+model: "FastSAM-s.pt"
+imgsz: 480
+height: 400
+width: 464
+mask_height: 416
+mask_width: 480

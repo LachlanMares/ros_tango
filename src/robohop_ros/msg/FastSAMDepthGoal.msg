@@ -1,0 +1,9 @@
+Header header
+sensor_msgs/CompressedImage image
+sensor_msgs/CompressedImage localised_image
+sensor_msgs/Image depth
+sensor_msgs/Image segmentation
+sensor_msgs/Image traversable_segmentation
+sensor_msgs/Image goal
+uint32 localised_image_id
+uint32[] target_points

@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="robohop_ros" type="robohop_load_map_via_service.py" name="robohop_load_map_via_service_node" output="screen"/>
+</launch>

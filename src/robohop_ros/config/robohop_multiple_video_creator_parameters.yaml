@@ -1,0 +1,92 @@
+target_directory: "this_bag_yo"
+
+creator_options:
+  image:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/image"
+    compressed_topic: ""
+    filename: "image.mp4"
+    image_sequence: True
+    video_sequence: False
+    video_encode_fps: 5
+
+  segmentation:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/segmentation"
+    compressed_topic: ""
+    filename: "segmentation.mp4"
+    image_sequence: True
+    video_sequence: False
+    video_encode_fps: 5
+
+  traversable_segmentation:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/traversable_segmentation"
+    compressed_topic: ""
+    filename: "traversable_segmentation.mp4"
+    image_sequence: True
+    video_sequence: False
+    video_encode_fps: 5
+
+  depth:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/depth_image"
+    compressed_topic: ""
+    filename: "depth.mp4"
+    image_sequence: True
+    video_sequence: False
+    video_encode_fps: 5
+
+  goal:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/goal"
+    compressed_topic: ""
+    filename: "goal.mp4"
+    image_sequence: True
+    video_sequence: False
+    video_encode_fps: 5
+
+  localised_image:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/localised_image"
+    compressed_topic: ""
+    filename: "localised_image.mp4"
+    image_sequence: True
+    video_sequence: False
+    video_encode_fps: 5
+
+  cost_map:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/goal_control/cost_map"
+    compressed_topic: ""
+    filename: "cost_map.mp4"
+    image_sequence: False
+    video_sequence: False
+    video_encode_fps: 5
+  
+  traversability:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/goal_control/traversability"
+    compressed_topic: ""
+    filename: "traversability.mp4"
+    image_sequence: True
+    video_sequence: False
+    video_encode_fps: 5
+
+  goal_control:
+    enable: True
+    compressed: False
+    topic: "robohop_ros/goal_control/goal"
+    compressed_topic: ""
+    filename: "goal_control.mp4"
+    image_sequence: True
+    video_sequence: False
+    video_encode_fps: 5

@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="tango_ros" type="continuous_goal_controller.py" name="continuous_goal_controller_node" output="screen"/>
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+    <node name="fast_sam_service" pkg="robohop_ros" type="fast_sam_service.py" output="screen"/>
+</launch>

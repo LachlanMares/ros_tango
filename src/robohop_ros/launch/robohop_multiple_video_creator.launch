@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="robohop_ros" type="robohop_multiple_video_creator.py" name="robohop_multiple_video_creator_node" output="screen"/>
+</launch>

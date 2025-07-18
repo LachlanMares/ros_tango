@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find robohop_ros)/launch/monocular_metric_depth_services.launch"/>
+    <include file="$(find robohop_ros)/launch/fast_sam_services.launch"/>
+</launch>

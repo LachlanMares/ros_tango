@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="rviz" type="rviz" name="main_rviz_window" args=" -d $(find robohop_ros)/rviz/robohop.rviz"/>
+    <node pkg="robohop_ros" type="robohop_visuals.py" name="robohop_visuals_node" output="screen"/>
+</launch>

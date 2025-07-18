@@ -1,0 +1,5 @@
+<launch>
+    <node name="fast_sam_service" pkg="robohop_ros" type="fast_sam_service.py" output="screen"/>
+    <node name="fast_sam_service_tester" pkg="robohop_ros" type="fast_sam_service_tester.py" output="screen"/>
+    <node pkg="rviz" type="rviz" name="main_rviz_window" args=" -d $(find robohop_ros)/rviz/fast_sam_service_tester.rviz"/>
+</launch>

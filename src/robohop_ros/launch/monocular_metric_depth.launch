@@ -1,0 +1,3 @@
+<launch>
+    <node name="monocular_metric_depth_node" pkg="robohop_ros" type="monocular_metric_depth.py" output="screen"/>
+</launch>

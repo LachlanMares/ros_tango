@@ -1,0 +1,7 @@
+sensor_msgs/CompressedImage image
+uint32[] boxes
+uint8 add_boxes_result_to_segmentation
+---
+sensor_msgs/Image segmentation
+uint32[] boxes_segmentation_shape
+uint8[] boxes_segmentation

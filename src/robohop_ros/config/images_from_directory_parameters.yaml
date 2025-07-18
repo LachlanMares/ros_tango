@@ -1,0 +1,13 @@
+# Publishers
+compressed_image_publisher_topic: '/camera/front/compressed_image'
+image_publisher_topic: '/camera/front/decompressed_image'
+
+publish_compressed: True
+file_suffix: '.png'
+
+run_id: "LabBasicRun"  # LabBallRun
+
+frame_duration: 0.15
+
+
+

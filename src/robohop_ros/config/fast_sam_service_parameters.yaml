@@ -1,0 +1,14 @@
+service_name_segmentation: 'fast_sam/segmentation_service'
+service_name_segmentation_points: 'fast_sam/segmentation_points_service'
+service_name_segmentation_boxes: 'fast_sam/segmentation_boxes_service'
+service_name_segmentation_robohop: 'fast_sam/robohop_points'
+service_name_segmentation_robohop_clip: 'fast_sam/robohop_clip'
+cuda_device: 0
+
+conf: 0.25
+model: "FastSAM-s.pt"
+imgsz: 480
+height: 400
+width: 464
+mask_height: 416
+mask_width: 480

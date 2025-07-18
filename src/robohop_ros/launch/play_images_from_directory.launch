@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="robohop_ros" type="play_images_from_directory.py" name="play_images_from_directory_node" output="screen"/>
+</launch>

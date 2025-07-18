@@ -1,0 +1,5 @@
+sensor_msgs/CompressedImage image
+float32[] camera_parameters
+string frame_id
+---
+sensor_msgs/PointCloud2 pointcloud
