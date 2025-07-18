@@ -2,31 +2,10 @@
 
 A ROS1 package for Tango as used here [https://podgorki.github.io/TANGO/data/TANGO_ICRA25.pdf], repository also includes robohop_ros.
 
-## Table of Contents
-
-- [Features](#features)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [Installing ROS1 (Noetic)](#installing-ros1-noetic)
-- [Building the Workspace](#building-the-workspace)
-- [Using Submodules](#using-submodules)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
-## Features
-
-- Tango robot control interface
-- Sensor drivers and state estimation
-- Integration with `robohop_ros` for shared robotics infrastructure
-- Simulation-ready URDF and launch files
-
 ## Repository Structure
 
 ```bash
-tango_ros/
+ros_tango/
 ├── src/
 │   ├── tango_ros/         # Tango package
 │   └── robohop_ros/       # Robohop package
@@ -78,7 +57,7 @@ Clone the repository into catkin_ws:
 ```bash
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
-git clone ......
+git clone git@github.com:LachlanMares/ros_tango.git
 cd ..
 ```
 
@@ -86,25 +65,25 @@ cd ..
 Source ROS and catkin_make package:
 ```bash
 source /opt/ros/noetic/setup.bash
-cd ~/catkin_ws/src
+cd ~/catkin_ws/src/ros_tango
 catkin_make
 source devel/setup.bash
 ```
 
 ## Additional Model Files
 ### Fast-SAM 
-These need to be copied into /tango_ros/src/robohop_ros/models
+These need to be copied into /ros_tango/src/robohop_ros/models
 
 https://github.com/ultralytics/assets/releases/download/v8.3.0/FastSAM-s.pt
 https://github.com/ultralytics/assets/releases/download/v8.3.0/FastSAM-x.pt
 
 ### Depth-Anything
-These need to be copied into /tango_ros/src/robohop_ros/src/depth_anything/metric_depth/checkpoints
+These need to be copied into /ros_tango/src/robohop_ros/src/depth_anything/metric_depth/checkpoints
 
 https://huggingface.co/spaces/LiheYoung/Depth-Anything/blob/main/checkpoints_metric_depth/depth_anything_metric_depth_indoor.pt
 https://huggingface.co/spaces/LiheYoung/Depth-Anything/blob/main/checkpoints_metric_depth/depth_anything_metric_depth_outdoor.pt
 
-This needs to be copied into /tango_ros/src/robohop_ros/src/depth_anything/metric_depth/zoedepth/models/base_models/checkpoints
+This needs to be copied into /ros_tango/src/robohop_ros/src/depth_anything/metric_depth/zoedepth/models/base_models/checkpoints
 
 https://huggingface.co/spaces/LiheYoung/Depth-Anything/blob/main/checkpoints/depth_anything_vitl14.pth
 
